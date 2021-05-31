@@ -13,7 +13,7 @@ client.on('ready', async () => {
     channel = guild.channels.cache.find(channel => channel.id === config.channel);
     announceChannel = guild.channels.cache.find(channel => channel.id === config.announceChannel);
     if (config.message === "") {
-        const message = await channel.send("Jの人は:regional_indicator_j:，Sの方は:regional_indicator_j:を押してください．");
+        const message = await channel.send("Jの人は:regional_indicator_j:，Sの方は:regional_indicator_s:を押してください．");
         //await message.react("regional_indicator_j");
         //await message.react("regional_indicator_s");
     } else {
