@@ -34,9 +34,9 @@ client.on('messageReactionAdd', async (reaction, user) => {
         const role = guild.roles.cache.find(role => role.name === (reaction.emoji.name === "🇯" ? "4J" : "4S"));
         const member = guild.members.cache.find(member => member.id === user.id );
         member.roles.add(role);
-        announceChannel.send(`${(reaction.emoji.name === "🇯" ? "J" : "S")}科の${user.username}さん，**4SJ合同クラス企画へようこそ！**`);
+        announceChannel.send(`${(reaction.emoji.name === "🇯" ? "J" : "S")}科の <@${user.id}>  さん，**4SJ合同クラス企画へようこそ！**`);
         user.send("https://tenor.com/view/praying-cat-please-thank-you-thanks-gif-16119732");
-        user.send(`${(reaction.emoji.name === "🇯" ? "J" : "S")}科の${user.username}さん，**4SJ合同クラス企画Discord鯖に参加してくださりありがとうございます！！**\nこれからクラス企画を盛り上げるためにみんなで頑張りましょう💪💪💪\n\nもし間違えて押してしまった場合は4JすずきにLINE，Discordでお知らせください．`);
+        user.send(`${(reaction.emoji.name === "🇯" ? "J" : "S")}科の <@${user.id}> さん，**4SJ合同クラス企画Discord鯖に参加してくださりありがとうございます！！**\nこれからクラス企画を盛り上げるためにみんなで頑張りましょう💪💪💪\n\nもし間違えて押してしまった場合は4JすずきにLINE，Discordでお知らせください．`);
     }
 });
 
